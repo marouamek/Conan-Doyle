@@ -1,0 +1,1050 @@
+/* Importation de polices depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+/* Définition d'une police personnalisée */
+@font-face {
+    font-family: 'FTY SKORZHEN NCV';
+    src: url('D:\INFO\L2\TP web\Projet Web\pages\FTY SKORZHEN NCV.ttf') format('truetype');
+}
+
+/****************************************************************************************************************************************/
+/******************************************************* LA PAGE INDEX*******************************************************************/
+/****************************************************************************************************************************************/
+
+/* Styles globaux */
+body, h1, ul, li {
+    margin: 0;
+    padding: 0;
+	text-align: center;
+}
+
+/* Police de base pour le corps de la page */
+body {
+    font-family: 'Crimson Text', serif;
+}
+
+/* Styles pour la barre de navigation principale*/
+#nav-bar {
+    font-family: 'Alata', sans-serif;
+    background-color: #362e28;         
+    color: #fff;
+    padding: 20px;
+}
+
+/* Styles pour le pied de page de la page d'accueil */
+#footer-index {
+    background-color: #362e28;                           
+    padding: 50px;
+    margin-top: 34%;
+}
+
+/* Styles pour les titres de section sur la page d'accueil */
+header img {
+    width: 60px;
+    margin-left: 5px;
+    position:fixed;
+    top:0;
+    left:0;
+}
+
+/* Styles pour le contenu principal de la page d'accueil */
+#body-index {
+    line-height: 1.6;
+    background-image: url('images/background.png'),url('images/background2.png');
+    background-size: contain,contain;
+    background-position:top , bottom ;         /* Centrez l'image */
+    background-repeat: no-repeat , no-repeat; /* Empêchez l'image de ne pas se répéter */
+}
+
+/* Styles pour le titre principal de la page d'accueil */
+#body-index h1 {
+    color: #fff;
+    font-family: 'FTY SKORZHEN NCV', sans-serif;
+    font-size: 4em;
+    margin-top: 15%;
+    margin-bottom: 2%;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Styles pour les sous-titres de la page d'accueil */
+#body-index h3 {
+    font-family: 'Alata', sans-serif;
+    color: #fff;
+    font-size: 1.7em;
+    text-align: center;
+    margin-bottom: 5%;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Styles pour la liste de navigation de la page d'accueil */
+#nav-bar ul {
+    margin-left: 40%;
+    list-style-type: none;
+}
+
+/* Styles pour les éléments de la liste de navigation de la page d'accueil */
+#nav-bar ul li {
+    display: inline;
+    margin-bottom: 20%;  /* THIS */
+}
+
+/* Styles pour les liens de la liste de navigation de la page d'accueil */
+#nav-bar ul li a {
+    margin: 3%;
+    color: #fff; /* Text color for navigation links */
+    text-decoration: none;
+}
+/****************************************************** SECTION INTRODUCTION ***************************************************************/
+
+/* Styles pour la section d'introduction */
+.section-intro {
+    font-size: 1.3em;                                                       /* Taille de la police           */
+    margin-top: 40%;                                                        /* Marge supérieure              */
+    color: #362e28;                                                       /* Couleur du texte              */
+    padding: 40px 20px;                                                     /* Espacement intérieur          */
+	text-align: center;                                                     /* Alignement du texte           */
+    width: 60%;                                                             /* Largeur de la section         */
+    padding-left: 20%;                                                      /* Espacement intérieur à gauche */
+    padding-top: 20%;                                                       /* Espacement intérieur en haut  */
+}
+
+/* Styles pour les titres de section */
+section h2 {
+    font-family: 'FTY SKORZHEN NCV', sans-serif;                            /* Police de caractères         */
+    font-size: 3em;                                                         /* Taille de la police          */
+    font-weight: 400;                                                       /* Poids de la police           */
+	text-decoration: underline 5px;                                         /* Soulignement personnalisé    */
+    color: #1C1000;                                                       /* Couleur du texte             */
+    margin-bottom: 0;     
+}
+
+/********************************************************* BIOGRAPHIE + ANECDOTE **********************************************************/
+
+
+/**************** En Commun ****************/
+
+/* Styles pour les sections de biographie et d'anecdote */
+.section-bio, .section-anec  {
+	text-align: left;                                                      /* Alignement du texte à gauche */
+	margin-left:10%;                                                       /* Marge à gauche               */
+    padding-right: 0;                                                      /* Aucun espacement à droite    */
+}
+
+/* Styles pour les paragraphes de biographie et d'anecdote */
+.section-bio p, .section-anec p {
+    font-size: 1.7em;                                                      /* Taille de la police          */
+    text-align: left;                                                      /* Alignement du texte à gauche */
+}
+
+/* Styles pour les boutons de biographie et d'anecdote */
+.section-bio button, .section-anec button  {
+    margin-top:0px;                                                       /* Marge supérieure           */
+    padding: 10px 20px;                                                   /* Espacement intérieur       */
+    border:10px thin;                                                     /* Bordure fine               */
+    width: fit-content;                                                   /* Largeur adaptée au contenu */
+    cursor: pointer;                                                      /* Curseur pointeur           */
+    float:left;                                                           /* Flottement à gauche        */
+    background: none;                                                     /* Aucun arrière-plan         */
+}
+
+/* Styles pour les liens des boutons de biographie et d'anecdote */
+.section-bio button a, .section-anec button a {
+    background: none;                                                     /* Aucun arrière-plan           */
+    text-transform: uppercase;                                            /* Transformation en majuscules */
+    color: #111;                                                        /* Couleur du texte             */
+    text-decoration: none;                                                /* Aucune décoration de texte   */
+    font-weight: 600;                                                     /* Poids de la police           */
+    font-size: 15px;                                                      /* Taille de la police          */
+    font-family: 'Alata', sans-serif;                                     /* Police de caractères         */
+}
+
+/****************  ****************/
+
+/* Styles pour le bouton "Voir plus" */
+#voir-plus {
+    margin-top:0px;                                                       /* Marge supérieure           */
+    padding: 10px 20px;                                                   /* Espacement intérieur       */
+    border: 2px solid;                                                    /* Bordure solide             */
+    width: fit-content;                                                   /* Largeur adaptée au contenu */
+    cursor: pointer;                                                      /* Curseur pointeur           */
+    float: center;                                                        /* Flottement au centre       */
+    background: transparent;                                              /* Arrière-plan transparent   */
+    border-color: #fff;                                                 /* Couleur de la bordure      */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);                       /* Ombre du texte             */
+}
+
+/* Styles pour le lien du bouton "Voir plus" */
+#voir-plus a {
+    background: none;                                                     /* Aucun arrière-plan           */
+    text-transform: uppercase;                                            /* Transformation en majuscules */
+    color: #fff;                                                        /* Couleur du texte             */
+    text-decoration: none;                                                /* Aucune décoration de texte   */
+    font-size: 2em;                                                       /* Taille de la police          */
+    font-family: 'FTY SKORZHEN NCV', sans-serif;                          /* Police de caractères         */
+}
+
+/* Styles pour la section de biographie */
+.section-bio {
+    margin-top: 25%;                                                     /* Marge supérieure */
+}
+
+/* Styles pour la photo de Conan Doyle au vélo */
+.div-bio {
+	float:right;                                                         /* Flottement à droite */
+    margin-top: 5%;                                                      /* Marge supérieure    */
+}
+
+/* Styles pour la section d'anecdote */
+.section-anec {
+	margin-top:50%;                                                      /* Marge supérieure    */
+}
+
+/* Styles pour la photo d'une loop */
+.div-anec {
+	float:right;                                                        /* Flottement à droite   */
+	margin-right:0;                                                     /* Aucune marge à droite */
+	margin-top:20%;                                                     /* Marge supérieure      */
+	margin-left:10%;                                                    /* Marge à gauche        */
+}
+
+/********************************************************* OEUVRE + QUIZ **********************************************************/
+
+
+                                            /**************** En Commun ****************/
+
+/* Styles pour les paragraphes de la section œuvre et quiz */
+.section-oeuvre p, .section-quiz p {
+    font-size: 1.7em;
+    text-align: right;
+}
+
+/* Styles pour les boutons de la section œuvre et quiz */
+.section-oeuvre button, .section-quiz button {
+    margin-top:0px;
+    padding: 10px 20px;
+    border:10px thin;
+    width: fit-content;
+    cursor: pointer;
+    background: none;
+}
+
+/* Styles pour les liens des boutons de la section œuvre et quiz */
+.section-oeuvre button a,.section-quiz button a {
+    background: none;
+    text-transform: uppercase;
+    color: #111;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: 'Alata', sans-serif;
+}
+                                   /****************  ****************/
+
+/* Styles pour la section œuvre */
+.section-oeuvre {
+	text-align: right;
+	margin-right:10%;
+	margin-top:45%;
+	margin-left: 50%;
+}
+
+/* Styles pour la photo de la section œuvre */
+.div-oeuvre {
+	float:left;
+    margin-left: 0;
+    width: 10%;
+    margin-top: 30%;
+	position:absolute;
+}
+
+/* Styles pour la section quiz */
+.section-quiz {
+	text-align: right;
+	margin-right:10%;
+	margin-top:  25%;
+	margin-left: 55%;
+}
+
+/* Styles pour la photo de la section quiz */
+.div-quiz {
+	float:left;
+    margin-left: 0;
+    width: 10%;
+    margin-top: 15%;
+	position:absolute;
+}
+
+
+/**************** En Commun Pages Biographie + Anecdote + Oeuvres + Quiz ****************/
+
+
+                /* Styles pour les titres des sections Biographie, Anecdote, Oeuvres et Quiz */
+                .biographie h1, .Anecdote h1, .oeuvres h1,.Quiz h1{
+                    font-size: 7em;
+                    text-align: left;
+                    color: #1C1000;
+                    font-weight: 1000;
+                    margin-left: 150px;
+                    margin-top: 7%;
+                    margin-bottom: 2%;
+                    font-family: 'FTY SKORZHEN NCV', sans-serif;
+                    letter-spacing: 0.2cm;
+                }
+                
+                /* Styles pour la liste de navigation et les listes de la section Biographie, Anecdote, Oeuvres et Quiz */
+                #nav-bar2 ul, .Anecdote ul, .oeuvres ul,.Quiz ul{
+                    background-color: #EFDAB4;
+                    margin-left: 11%;
+                    margin-right: 0;
+                    padding-left: 4%;
+                    padding-bottom: 1.5%;
+                    padding-top: 1%;
+                }
+                
+                /* Styles pour les éléments de la liste de navigation et des listes de la section Biographie, Anecdote, Oeuvres et Quiz */
+                #nav-bar2 li, .Anecdote li, .oeuvres li, .Quiz li{
+                    text-align: left; 
+                    font-weight: 1000;
+                }
+                
+                /* Styles pour les liens des éléments de la liste de navigation et des listes de la section Biographie, Anecdote, Oeuvres et Quiz */
+                #nav-bar2 ul li a, .Anecdote ul li a, .oeuvres ul li a,.Quiz ul li a{
+                    color: #111;
+                    text-decoration: none;
+                    font-size: 1.3em;
+                    font-family: 'Alata', sans-serif;
+                }
+                
+                /* Styles pour les sections Biographie, Anecdote, Oeuvres et Quiz */
+                .biographie, .Anecdote, .oeuvres,.Quiz{
+                    background-color:#FBF0D8 ;                
+                    padding: 1.5%;
+                    padding-right: 0%;
+                    margin-bottom: 2%;                          
+                    height: 700px;
+                } 
+                
+                /* Styles pour les titres de citation dans la section Biographie, Anecdote et Quiz */
+                .quote h2, #anecdote h2, #le-saviez-vous h2 {
+                    font-size: 5em;
+                    text-align: center;
+                    font-weight: 550;
+                    margin-top: 15%;
+                    font-family: 'FTY SKORZHEN NCV', sans-serif;
+                    letter-spacing: 0.1cm;
+                    text-decoration: none;
+                }
+
+
+/****************************************************************************************************************************************/
+/******************************************************* LA PAGE BIOGRAPHIE *************************************************************/
+/****************************************************************************************************************************************/
+
+
+
+/* Styles pour la citation dans la section Biographie */
+.quote {
+    background-color: #fff;                          
+    padding: 20px;
+}
+
+
+/* Styles pour le texte en italique dans la citation */
+.quote span {
+    font-style: italic;
+    font-size: 1.7em;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Styles pour le paragraphe à l'intérieur du texte en italique dans la citation */
+.quote span p {
+    margin-bottom: 0;
+    margin-top: 200px ;
+}
+
+/* Styles pour le deuxième texte en italique dans la citation */
+#second-text {
+    font-style: italic;
+    margin-top: 40px;
+}
+
+/* Styles pour la chronologie */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Styles pour le titre de la chronologie */
+.timeline h1{
+    color: #A17E3E;
+    text-align: center;
+    font-family: 'FTY SKORZHEN NCV', sans-serif;
+    background-color: White;
+    padding: 1% 3%; 
+    font-size: 4em;
+	margin :3%;
+}
+/* Styles pour la ligne verticale de la chronologie */
+.vertical-line {
+    position: absolute;
+    width: 2px;
+    background-color: #A17E3E;                        
+    top: 100px;
+    bottom: -400px;
+    left: 50%;
+    margin-left: -1px;                                  
+	z-index: -1;
+}
+
+/* Styles pour les sous-sections de la chronologie */
+.enfance h2{
+    text-align: left;
+    margin-left: 100px;
+    text-decoration: none;
+    font-weight: 300;
+	border-bottom: 2px solid  #A17E3E;; 
+    margin-bottom: 20px;
+	width: 497px;
+}
+
+/* Styles pour les paragraphes des sous-sections de la chronologie */
+.enfance p, .education p, .aventure-SH p, #text-enfance {
+    text-align: justify;
+    margin-left: 1%;
+	font-size:1.7em;
+	padding-left:0;
+	padding-right:780px;
+}
+
+#text-enfance{
+    text-align: justify;	
+	padding-right:10px;
+	padding-left:62%;
+	font-size:1.7em;
+	padding-top:60px;
+	margin-bottom:18%;
+}
+
+.enfance  p::first-letter, .education  p::first-letter, 
+.premier-marriage p::first-letter, .aventure-SH p::first-letter, .celebrite p::first-letter{
+    font-size: 2em; /* Taille de la première lettre */
+    margin-right: 5px; /* Ajoutez un peu d'espace à droite de la première lettre */
+}
+
+.excerpt{
+	float:right;
+}
+
+.image-enfance img {
+  float:left;
+  margin-top:80px;
+  margin-left:40px;
+  margin-bottom:50px;
+}
+
+#text {
+	text-align: justify;
+    margin-left: 100px;
+	font-size:1.7em;
+	padding-left:0;
+	padding-right:62%;
+}
+
+.education{
+	margin-top:300px;
+}
+
+.image-education {
+	float:left;
+    margin-top:0;
+}
+
+.education h2{
+    text-align: left;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+#grand{
+	border-bottom: 2px solid  #A17E3E;
+    margin-left:50%;
+	padding-left:34%;
+}
+
+#grand1{
+	border-bottom: 2px solid  #A17E3E;
+    margin-left:50%;
+	padding-left:8%;
+	text-align: right;
+}
+
+#petit{
+	font-size: 2.2em;
+	border-bottom: 2px solid  #A17E3E;
+    margin-left:94%;
+}
+
+#petit-gauche{
+    font-size: 2.2em;
+	border-bottom: 2px solid  #A17E3E;
+    margin-right:80%;
+    margin-left: 100px;
+}
+
+#certificat-dhonneur{
+	float:right ;
+}
+
+.premier-marriage h2, .celebrite h2  {
+    text-align: left;
+    margin-left: 100px;
+    text-decoration: none;
+    font-weight: 300;
+	border-bottom: 2px solid  #A17E3E; 
+    margin-bottom: 20px;
+	width: 497px;
+}
+
+.premier-marriage p, .celebrite p, .universite p{
+    text-align: justify;
+    margin-left: 8%;
+	font-size:1.7em;
+	padding-left:0;
+	padding-right:62%;
+}
+
+.aventure-SH h2,.deuxieme-marriage h2, .son-deces h2 {
+    text-align: right;
+    text-decoration: none;
+    font-weight: 200;
+    margin-left: 100px;
+    font-size: 3em;
+    border-bottom: 2px solid  #A17E3E;
+    margin-left:50%;
+	padding-left:20%;
+}
+
+.majuscule {
+    font-size: 2em; 
+    margin-right: 5px; 
+} 
+
+.year-right {
+    font-size: 15em;
+    color: #fff;
+    text-decoration: none;
+    text-align: right;
+    text-shadow: 1px 1px 5px #fff;
+    -webkit-text-stroke: 0.5px #A17E3E;
+    font-family: 'FTY SKORZHEN NCV', sans-serif;
+    margin-bottom: 0;
+}
+
+#text-celebrite2{
+   text-align: justify;
+   margin-left: 100px;
+   font-size:1.7em;
+   padding-left:0;
+   padding-right:62%;
+   margin-top:-30%;
+   margin-bottom:30%;
+}
+
+.year-left {
+    font-size: 15em;
+    color: #fff;
+    text-decoration: none;
+    text-align: left;
+    text-shadow: 1px 1px 5px #fff;
+    -webkit-text-stroke: 0.5px #A17E3E;
+    font-family: 'FTY SKORZHEN NCV', sans-serif;
+    margin-bottom: 0;
+}
+
+
+/****************************************************************************************************************************************/
+/******************************************************* LA PAGE OEUVRES *************************************************************/
+/****************************************************************************************************************************************/
+
+
+
+#image-oeuvre {
+    float: right;
+    margin-top: 13%;
+}
+
+#introduction {
+    text-align: center,justify;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    font-size: 1.7em;
+    color: #000;
+}
+
+#oeuvre-image1 {
+    float: right;
+	margin-top:-5%;
+}
+
+#Sherlock-Holmes1 h2 {
+    text-align: left;
+    text-decoration: none;
+    margin-top: 20%;
+    border-bottom: 2px solid  #A17E3E;
+     margin-left: 5%;
+    letter-spacing: 0.1cm;
+	margin-right:0;
+}
+
+#Sherlock-Holmes1 p{
+    text-align: justify;
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: 300;
+	width: 65%;
+    padding-bottom: 5%;
+    margin-left: 5%;
+}
+
+#Sherlock-Holmes1 div{
+    border-bottom: 2px solid  #A17E3E;
+    margin-right: 0;
+	margin-top:3%;
+	margin-left:30%;
+}
+
+.table table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 65%; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the table horizontally */
+    margin-top: 20%;
+}
+
+.table th, .table td {
+    border: 1px solid #A17E3E;
+    padding: 8px;
+    text-align: left;
+	font-size:1.5em;
+    color: #1C1000;
+    background-color: #FBF0D8;
+}
+  
+.table th {
+    background-color: #eed5d5;
+}
+
+#Sherlock-Holmes2 h2 {
+    text-align: right;
+    text-decoration: none;
+    margin-top: 10%;
+    border-bottom: 2px solid  #A17E3E;
+    margin-right: 5%;
+    letter-spacing: 0.1cm;
+}
+
+#Sherlock-Holmes2 #main {
+    text-align: left;
+    font-size: 2em;
+    margin-left: 5%;
+    text-decoration: none;
+    font-weight: 300;
+    margin-right: 5%;
+    margin-bottom: 10%;
+}
+
+.vertical-line1 {
+    position: absolute;
+    width: 2px;
+    background-color: #A17E3E; /* Couleur de la ligne */
+    top: 3735px;
+    bottom: -4200px;
+    left: 50%;
+    margin-left: -1px; /* Moitié de la largeur de la ligne */
+	z-index: -1;
+}
+
+.oeuvre-image2 {
+    float: right;
+    margin-right: 20%;
+}
+
+.book-info {
+    background-color: #F3EAC9;
+    padding: 20px;
+    border: 2px solid #E0CA94;
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    margin: 5%;
+}
+
+.book-description {
+  
+    text-align: justify;
+    width: 100%;
+}
+  
+.book-description  p{
+    text-align: left;
+    width: 100%;
+    font-size: 1.5em;
+}
+  
+.book-description h3 {   
+    font-size: 1.7em;
+    font-style: italic;
+}
+
+.book-info2 {
+    background-color: #F3EAC9;
+    padding: 20px;
+    border: 2px solid #E0CA94;
+    justify-content: space-between;
+    width: 25%;
+    margin-right: 15%;
+    float: right;
+}
+
+.oeuvre-image3{
+    float: left;
+    margin-left: 5%;
+}
+
+.book-info3 {
+    background-color: #F3EAC9;
+    padding: 20px;
+    border: 2px solid #E0CA94;
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    margin: 5%;
+    margin-top:32%;
+}
+
+.oeuvre-image4{
+    float: right;
+    margin-right: 18%;
+    margin-top:-23%;
+}
+
+.titre-a-droite h2 { 
+    font-size: 3em;
+    margin-top: 30%;
+    font-family: 'FTY SKORZHEN NCV', sans-serif;
+    text-align: left;
+    margin-left: 100px;
+    text-decoration: none;
+    font-weight: 300;
+    border-bottom: 2px solid  #A17E3E;; 
+    margin-bottom: 20px;
+}
+
+.titre-a-gauche h2 {
+    font-size: 3em;
+    margin-top: 200px;
+    font-family: 'FTY SKORZHEN NCV', sans-serif;
+    text-align: right;
+    margin-right: 100px;
+    text-decoration: none;
+    font-weight: 300;
+    border-bottom: 2px solid  #A17E3E;; 
+    margin-bottom: 20px;
+}
+
+#text-fin {
+    text-align: justify;
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: 300;
+    padding-bottom: 5%;
+    margin-left: 6%;	
+    margin-right: 7%;
+}
+
+#conclusion {
+	text-align: justify , Center;
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: 300;
+    padding-bottom: 2%;
+    margin-left: 22%;	
+	margin-right: 22%;
+	margin-top:10%;
+    margin-bottom:10%;	
+}
+
+
+
+
+
+/****************************************************************************************************************************************/
+/********************************************************* LA PAGE ANECDOTE *************************************************************/
+/****************************************************************************************************************************************/
+
+
+
+#image-anecdote{
+    float: right;
+    margin-top: 2%;
+}
+
+#le-saviez-vous {
+    border: 5px solid #A17E3E;
+    margin: 10%;
+    padding-bottom: 10%;
+}
+
+#le-saviez-vous h2 ,#anecdote h2{
+    color: #1C1000;
+    border:10px solid #A17E3E;
+    padding: 20px;
+    margin: 20%;
+    margin-top: 15%;
+    margin-bottom: 0%;
+    font-size: 5em;
+    text-align: center;
+    font-weight: 550;
+    font-family: 'FTY SKORZHEN NCV', sans-serif;
+    letter-spacing: 0.1cm;
+    text-decoration: none;
+}
+
+#le-saviez-vous p {
+    margin-top:10% ;
+    font-size: 2.5em;
+    border-bottom: 2px solid  #A17E3E; 
+    color: #000;
+    text-align: left;
+    width: 60%;
+    display: inline-block;
+}
+
+.image{
+    float: right;
+    margin-top: 180px;
+}
+
+#anecdote{
+    margin-bottom: 18%;
+}
+
+#anecdote ul {
+    border: 5px solid #A17E3E;
+    background-color: #F8EACF;
+    margin: 10%;
+    padding-bottom: 5%;
+    margin-bottom: 10px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 2em;
+    margin-top: 10%;
+    text-align: center;   
+}
+
+#anecdote ul li {
+    text-align: justify;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+
+/****************************************************************************************************************************************/
+/*********************************************************** LA PAGE QUIZ ***************************************************************/
+/****************************************************************************************************************************************/
+
+.question-a-droite p {
+    font-size: 2em;
+    margin-top: 200px;
+    font-family: 'FTY SKORZHEN NCV', sans-serif;
+    text-align: left;
+    margin-left: 100px;
+    text-decoration: none;
+    font-weight: 300;
+	border-bottom: 2px solid  #A17E3E;
+    margin-bottom: 20px;
+}
+
+.question-a-gauche p {
+    font-size: 2em;
+    margin-top: 200px;
+    font-family: 'FTY SKORZHEN NCV', sans-serif;
+    text-align: right;
+    margin-right: 100px;
+    text-decoration: none;
+    font-weight: 300;
+	border-bottom: 2px solid  #A17E3E;; 
+    margin-bottom: 20px;
+}
+
+.question-a-droite ul li  {
+    color: #111;
+    text-decoration: none;
+    font-size: 1.7em;
+    font-family: 'Crimson Text', sans-serif;
+}
+
+.question-a-droite li {
+    list-style-type: none;
+    text-align: left; 
+    font-weight: 1000;
+    margin-left: 8%;
+    text-decoration: none;
+}
+
+.question-a-gauche ul li  {
+    color: #111;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: 'Crimson Text', sans-serif;
+}
+
+.question-a-gauche li {
+    list-style-type: none;
+    text-align: right; 
+    font-weight: 1000;
+    margin-right: 10%;
+    text-decoration: none;
+}
+
+#quizResults h2 {
+    font-size: 2em;
+    margin-top: 3%;
+    font-family: 'FTY SKORZHEN NCV', sans-serif;
+    text-align: left;
+    margin-left: 100px;
+    text-decoration: none;
+    font-weight: 300;
+	border-bottom: 2px solid  #A17E3E;; 
+    margin-bottom: 20px;
+}
+
+#quizResults p {
+    text-align: left; 
+    font-size: 1.2em;
+    margin-left: 8%;
+    text-decoration: none;
+}
+
+#quizResults h3 {
+    font-size: 2em;
+    margin-top: 200px;
+    font-family: 'FTY SKORZHEN NCV', sans-serif;
+    text-align: right;
+    margin-right: 100px;
+    text-decoration: none;
+    font-weight: 300;
+	border-bottom: 2px solid  #A17E3E;; 
+}
+
+#score {
+    color: #A17E3E;
+    font-size: 5em;
+    text-align: center;
+    font-family: 'FTY SKORZHEN NCV', sans-serif;
+    margin: 5%;
+}
+
+.mot-colorie {
+    font-family: 'FTY SKORZHEN NCV', sans-serif;
+    text-align: left; 
+    font-size: 1.2em;
+    margin-left: 8%;
+    text-decoration: none;
+}
+
+#quizForm button {
+    font-family: 'Alata', sans-serif;
+    margin-top:10%;
+    margin-bottom: 3%;
+    padding: 10px 20px;
+    border:20px thin;
+    width: fit-content;
+    cursor: pointer;
+    float:center;
+    background: none;
+}
+
+.message-green {
+    color: green;
+    font-family: 'FTY SKORZHEN NCV', sans-serif;
+    width: 60%;
+    font-size: 3em;
+    text-align: center;
+    margin-left: 20%;
+    margin-bottom: 10%;
+}
+  
+.message-blue {
+    font-family: 'FTY SKORZHEN NCV', sans-serif;
+    width: 60%;
+    font-size: 3em;
+    text-align: center;
+    margin-left: 20%;
+    margin-bottom: 10%;
+    color: rgb(4, 4, 56);
+}
+  
+.message-orange {font-family: 'FTY SKORZHEN NCV', sans-serif;
+    width: 60%;
+    font-size: 3em;
+    text-align: center;
+    margin-left: 20%;
+    margin-bottom: 10%;
+    color: #A17E3E;
+}
+  
+.message-red {
+    font-family: 'FTY SKORZHEN NCV', sans-serif;
+    width: 60%;
+    font-size: 3em;
+    text-align: center;
+    margin-left: 20%;
+    color: rgb(255, 42, 42);
+    margin-bottom: 10%;
+}
+
+
+
+
+/****************************************************************************************************************************************/
+/******************************************************** PAGINATION + FOOTER ***********************************************************/
+/****************************************************************************************************************************************/
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pagination-button {
+    background-color: #fff;
+    color: #000;
+    padding: 8px 16px;
+    margin: 0 4px;
+    cursor: pointer;
+    text-decoration: none;                               
+    font-family: 'FTY SKORZHEN NCV', sans-serif;
+    border: solid;
+}
+
+.pagination-button.active {
+    background-color: #A17E3E;
+    color: white;
+}
+
+
+#footer-pages{
+    background-color: #362e28; 
+    color: #fff; 
+    padding: 50px;
+	margin-top:5%;
+}
+

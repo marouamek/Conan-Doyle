@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titre de la page -->
+    <title>Anecdotes</title>
+    <link rel="icon" type="image/png" href="images/sherlock1.png" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Lien externe css -->
+  </head>
+
+  <body id="body-anecdote">
+    <header id="nav-bar">
+      <a href="index.html">
+        <img src="images/sherlock.png" alt="sherlock Image" />
+      </a>
+      <!-- Navigation principale du site -->
+      <nav>
+        <ul>
+          <!-- Liens de navigations -->
+          <li><a href="biographie.html">Biographie</a></li>|
+          <li><a href="oeuvres.html">Ses Œuvres</a></li>|
+          <li><a href="anecdote.html">Anecdote</a></li>|
+          <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="image-anecdote">
+      <img src="images/anecdote_image_page.png" alt="Loop" />
+    </div>
+
+    <!-- Contenu de la page -->
+    <main>
+      <!-- Section de l'anecdote -->
+      <section class="Anecdote">
+        <h1>ANECDOTE</h1>
+        <!-- Navigation rapide vers les sections de l'anecdote -->
+        <nav id="nav-bar2">
+          <ul>
+            <li><a href="#le-saviez-vous">Le Saviez Vous?</a></li>
+            <li><a href="#anecdote">Anecdote</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <!-- Citation d'Arthur Conan Doyle -->
+      <section class="quote">
+        <span>
+          <p>
+            “Quand ton moral est bas,<br />
+            quand le jour te paraît sombre,<br />
+            quand le travail devient monotone,<br />
+            quand l'espoir n'y est pas, grimpe sur <br />
+            un vélo et roule sans penser à autre chose<br />
+            que le chemin que tu empruntes”
+          </p>
+        </span>
+        <p id="second-text">Arthur Conan Doyle.</p>
+      </section>
+
+      <!-- Section "Le Saviez Vous?" -->
+      <section id="le-saviez-vous">
+        <h2>Le Saviez Vous?</h2>
+        <p>Conan était un grand sportif, et il jouait au cricket !</p>
+        <div id="anecdote-image">
+          <img src="images/cricket.png" alt="crocket" />
+        </div>
+        <!-- Les autres anecdotes suivent le même schéma -->
+        <p>Il fut l'un des premiers automobilistes en Grande-Bretagne !</p>
+        <div id="anecdote-image">
+          <img src="images/automobiliste.png" alt="crocket" />
+        </div>
+        <p>
+          Arthur Conan Doyle a voyagé dans l'Arctique lors d'une expédition de
+          chasse à la baleine !
+        </p>
+        <div id="anecdote-image">
+          <img src="images/voyage.png" alt="crocket" />
+        </div>
+        <p>
+          Il s’est présenté plusieurs fois aux élections municipales d’Édimbourg
+          sans jamais avoir été élu !
+        </p>
+        <div id="anecdote-image">
+          <img src="images/election.png" alt="crocket" />
+        </div>
+      </section>
+
+      
+      <!-- Section "Anecdotes" -->
+      <section id="anecdote">
+        <h2>ANECDOTES</h2>
+        <!-- Liste des anecdotes -->
+        <ul>
+          <li>
+            Doyle a été anobli mais pas pour avoir écrit Sherlock Holmes.
+            (C'était à cause de la Grande Guerre des Boers).
+          </li>
+          <li>Arthur Conan Doyle a grandi dans la pauvreté.</li>
+          <li>
+            Sir Arthur Conan Doyle avait prévu d’appeler son personnage
+            Sherrinford Hope. La femme de Doyle, Luisa, a réussi à convaincre
+            son mari de le changer car elle détestait ce nom.
+          </li>
+          <li>Il croyait aux fées.</li>
+          <li>Il est mort en tenant une fleur.</li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Pagination pour naviguer entre les pages -->
+    <div class="pagination">
+      <a href="biographie.html" class="pagination-button">&lt;</a>
+      <a href="index.html" class="pagination-button">1</a>
+      <a href="biographie.html" class="pagination-button">2</a>
+      <a href="oeuvres.html" class="pagination-button">3</a>
+      <a href="anecdote.html" class="pagination-button active">4</a>
+      <a href="quiz.html" class="pagination-button">5</a>
+      <a href="quiz.html" class="pagination-button">&gt;</a>
+    </div>
+    <footer id="footer-pages"></footer>
+  </body>
+</html>

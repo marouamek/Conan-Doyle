@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titre de la page -->
+    <title>Quiz</title>
+    <link rel="icon" type="image/png" href="images/sherlock1.png" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Lien externe css -->
+  </head>
+
+  <body id="body-anecdote">
+    <!-- En-tête de la page -->
+    <header id="nav-bar">
+      <!-- Logo du site avec lien vers la page d'accueil -->
+      <a href="index.html">
+        <img src="images/sherlock.png" alt="sherlock Image" />
+      </a>
+      <!-- Navigation principale du site -->
+      <nav>
+        <ul>
+          <!-- Liens de navigation vers d'autres pages du site -->
+          <li><a href="biographie.html">Biographie</a></li>|
+          <li><a href="oeuvres.html">Ses Œuvres</a></li>|
+          <li><a href="anecdote.html">Anecdote</a></li>|
+          <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="image-anecdote">
+      <img src="images/quiz_image_page.png" alt="Loop"> 
+    </div>
+
+    <!-- Contenu principal de la page -->
+    <main>
+
+      <!-- Section du quiz -->
+      <section class="Quiz">
+        <h1>QUIZ</h1>
+        <!-- Navigation rapide vers le formulaire du quiz -->
+        <nav id="nav-bar2">
+          <ul>
+            <li><a href="#quizForm">Etes vous a la hauteur de ce quiz ultime !</a></li>   
+          </ul>
+        </nav>
+      </section>
+      
+      <!-- Citation de Sherlock Holmes -->
+      <section class="quote">
+        <span>
+          <p>
+            “Une fois que vous avez <br>
+            éliminé l'impossible, ce qui <br> 
+            quand le travail devient monotone,<br>
+            reste, aussi improbable que cela<br>
+            puisse paraître, doit être la <br>
+            vérité.”
+          </p>
+        </span>
+        <p id="second-text">
+          Arthur Conan Doyle Sherlock Holmes Signe de Quatre</p>
+      </section>
+
+      <!-- Formulaire du quiz -->
+      <form id="quizForm">
+        <!-- Question 1 -->
+        <section class="question-a-droite">
+          <p>En quelle année "The Sign of the Four" a-t-il été publié?</p>
+          <ul>
+              <li><input type="radio" name="q1" value="1890"> 1890</li>
+              <li><input type="radio" name="q1" value="1942"> 1942</li>
+              <li><input type="radio" name="q1" value="1887"> 1887</li>
+              <li><input type="radio" name="q1" value="1821"> 1821</li>
+          </ul>
+        </section>
+        <!-- Les autres questions du quiz suivent un schéma similaire -->
+
+        <section class="question-a-gauche">
+          <p>Où est né Arthur Conan Doyle?</p>
+          <ul>
+            <li> Londres, Angleterre <input type="radio" name="q2" value="Londres, Angleterre"></li>
+            <li> Dublin, Irlande <input type="radio" name="q2" value="Dublin, Irlande"></li>
+            <li> Édimbourg, Écosse <input type="radio" name="q2" value="Édimbourg, Écosse"></li>
+            <li>Cardiff, Pays de Galles <input type="radio" name="q2" value="Cardiff, Pays de Galles"> </li>
+          </ul>
+        </section>
+
+        <section class="question-a-droite">
+          <p>Quel était le métier d'Arthur Conan Doyle avant de devenir écrivain à plein temps?</p>
+          <ul>
+            <li><input type="radio" name="q3" value="Avocat"> Avocat</li>
+            <li><input type="radio" name="q3" value="Médecin"> Médecin</li>
+            <li><input type="radio" name="q3" value="Enseignant"> Enseignant</li>
+            <li><input type="radio" name="q3" value="Ingénieur"> Ingénieur</li>
+          </ul>
+        </section>
+
+        <section class="question-a-gauche">
+         <p>Quel personnage a inspiré Sherlock Holmes?</p>
+         <ul>
+            <li> Dr. John Watson<input type="radio" name="q4" value="Dr. John Watson"></li>
+            <li> Professeur Joseph Bell<input type="radio" name="q4" value="Professeur Joseph Bell"></li>
+            <li> Inspecteur Lestrade<input type="radio" name="q4" value="Inspecteur Lestrade"></li>
+            <li> Mrs. Hudson<input type="radio" name="q4" value="Mrs. Hudson"></li>
+          </ul>
+        </section>
+
+        <section class="question-a-droite">
+          <p>Combien d'histoires de Sherlock Holmes ont été publiées entre septembre 1903 et mars 1927?</p>
+          <ul>
+            <li><input type="radio" name="q5" value="50"> 50</li>
+            <li><input type="radio" name="q5" value="33"> 33</li>
+            <li><input type="radio" name="q5" value="20"> 20</li>
+            <li><input type="radio" name="q5" value="42"> 42</li>
+          </ul>
+        </section>
+
+        <section class="question-a-gauche">
+          <p>Quel était le titre du premier roman de Sherlock Holmes?</p>
+          <ul>
+            <li> "A Study in Scarlet"<input type="radio" name="q6" value="A Study in Scarlet"></li>
+            <li> "The Hound of the Baskervilles"<input type="radio" name="q6" value="b"></li>
+            <li>"The Sign of the Four"<input type="radio" name="q6" value="c"> </li>
+            <li> "The Adventure of the Speckled Band"<input type="radio" name="q6" value="d"></li>
+          </ul>
+        </section>
+
+        <section class="question-a-droite">
+          <p>Quel événement a conduit à la "mort" temporaire de Sherlock Holmes?</p>
+          <ul>
+            <li><input type="radio" name="q7" value="Tomber d'une cascade"> Tomber d'une cascade</li>
+            <li><input type="radio" name="q7" value="b"> Être abattu par un criminel</li>
+            <li><input type="radio" name="q7" value="c"> Contracter une maladie mortelle</li>
+            <li><input type="radio" name="q7" value="d"> Tomber d'un cheval</li>
+          </ul>
+        </section>
+
+        <section class="question-a-gauche">
+          <p>Dans quelle histoire Sherlock Holmes a-t-il dit célèbrement : "Elementaire, mon cher Watson"?</p>
+          <ul>
+            <li> "The Adventure of the Speckled Band"<input type="radio" name="q8" value="The Adventure of the Speckled Band"></li>
+            <li> "A Scandal in Bohemia"<input type="radio" name="q8" value="A Scandal in Bohemia"></li>
+            <li> "The Hound of the Baskervilles"<input type="radio" name="q8" value="The Hound of the Baskervilles"></li>
+            <li> "The Adventure of the Blue Carbuncle"<input type="radio" name="q8" value="The Adventure of the Blue Carbuncle"></li>
+          </ul>
+        </section>
+
+        <section class="question-a-droite">
+          <p>Quel était le nom de l'ennemi juré de Sherlock Holmes?</p>
+          <ul>
+            <li><input type="radio" name="q9" value="Professeur Moriarty"> Professeur Moriarty</li>
+            <li><input type="radio" name="q9" value="Colonel Sebastian Moran"> Colonel Sebastian Moran</li>
+            <li><input type="radio" name="q9" value="Irene Adler"> Irene Adler</li>
+            <li><input type="radio" name="q9" value="Inspecteur Lestrade"> Inspecteur Lestrade</li>
+          </ul>
+        </section>
+
+        <!-- Bouton pour valider les réponses -->
+        <button type="button" onclick="submitQuiz()" > Valider les réponses</button>
+      </form>
+      
+       <!-- Résultats du quiz -->
+      <div id="quizResults" style="display: none;">
+        <!-- Affichage des réponses aprés soumission -->
+        <!-- Cette partie du quiz est généré par JavaScript -->
+        <h2>Réponses</h2>
+        <p>En quelle année "The Sign of the Four" a-t-il été publié?: <b>1890</b></p>
+        <p>Où est né Arthur Conan Doyle?: <b>Édimbourg, Écosse</b></p>
+        <p>Quel était le métier d'Arthur Conan Doyle avant de devenir écrivain à plein temps?: <b>Médecin</b></p>
+        <p>Quel personnage a inspiré Sherlock Holmes? : <b>Professeur Joseph Bell</b></p>
+        <p>Combien d'histoires de Sherlock Holmes ont été publiées entre septembre 1903 et mars 1927? : <b>20</b></p>
+        <p>Quel était le titre du premier roman de Sherlock Holmes?: <b>"A Study in Scarlet"</b></p>
+        <p>Quel événement a conduit à la "mort" temporaire de Sherlock Holmes?: <b>Tomber d'une cascade</b></p>
+        <p>Dans quelle histoire Sherlock Holmes a-t-il dit célèbrement : "Elementaire, mon cher Watson"?:<b> "The Hound of the Baskervilles"</b></p>
+        <p>Quel était le nom de l'ennemi juré de Sherlock Holmes?: <b>Professeur Moriarty</b></p>
+        
+        <h3>Résultat Final</h3>
+        <section id="score"></section>
+        <div id="message"></div>
+      </div>     
+    </main>
+
+    <!-- Pagination pour naviguer entre les pages -->
+    <div  class="pagination">
+      <a href="biographie.html" class="pagination-button">&lt;</a>
+      <a href="index.html" class="pagination-button">1</a>
+      <a href="biographie.html" class="pagination-button">2</a>
+      <a href="oeuvres.html" class="pagination-button">3</a>
+      <a href="anecdote.html" class="pagination-button ">4</a>
+      <a href="quiz.html" class="pagination-button active">5</a>
+      <a href="quiz.html" class="pagination-button">&gt;</a>
+    </div>
+    <!-- Pied de page du site -->
+    <footer id="footer-pages"></footer>
+    
+    <!----------------------------------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------------------------------->
+
+
+    <!-- Script JavaScript pour évaluer le quiz -->
+    <script>
+      // Fonction pour soumettre le quiz et afficher les résultats
+      function submitQuiz() {
+        // Tableau pour stocker les questions et les réponses
+        const questions = [
+          { name: "q1", answer: "1890" },
+          { name: "q2", answer: "Édimbourg, Écosse" },
+          { name: "q3", answer: "Médecin" },
+          { name: "q4", answer: "Professeur Joseph Bell" },
+          { name: "q5", answer: "20" },
+          { name: "q6", answer: 'A Study in Scarlet' },
+          { name: "q7", answer: "Tomber d\'une cascade" },
+          { name: "q8", answer: 'The Hound of the Baskervilles' },
+          { name: "q9", answer: "Professeur Moriarty" },
+        ];
+        let score = 0;
+
+         // Boucle pour vérifier les réponses
+        for (const question of questions) {
+          const answerElement = document.querySelector(`input[name="${question.name}"]:checked`);
+          const answer = answerElement ? answerElement.value : ""; // Gérer les cas où aucune sélection n'est faite
+          if (answer === question.answer) {
+            score++;
+          }
+        }
+        // Affichage des résultats
+        document.getElementById("quizResults").style.display = "block";
+        document.getElementById("score").innerHTML = "Score: " + score + "/9";
+        var messageElement = document.getElementById("message");
+
+        // Messages en fonction du score
+        switch (score) {
+          case 9:
+          case 8:
+            messageElement.textContent = "Félicitations! Vous avez un excellent score!";
+            messageElement.classList.add("message-green");
+          break;
+
+          case 7:
+          case 6:
+            messageElement.textContent = "Bien joué! Vous avez un bon score.";
+            messageElement.classList.add("message-blue");
+          break;
+
+          case 5:
+          case 4:
+            messageElement.textContent = "Pas mal, mais vous pouvez faire mieux. Continuez à vous entraîner!";
+            messageElement.classList.add("message-orange");
+          break;
+
+          default:
+            messageElement.textContent = "Il semble que vous ayez encore besoin de pratiquer. Ne vous découragez pas, continuez à essayer!";
+            messageElement.classList.add("message-red");
+          break;
+        }
+      }
+    </script>
+  </body>
+</html>

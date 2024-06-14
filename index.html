@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arthur Conan Doyle</title>
+    <link rel="icon" type="image/png" href="images/sherlock1.png" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Lien externe css -->
+  </head>
+
+  <!--On a utilisé le ID pour qu'on puissent modifier chaque pages séparament-->
+  <body id="body-index">
+
+    <!-- Le header qui contient la barre de navigation -->
+    <!--On a utilisé le ID pour qu'il soit unique pour les pages qui ont le nav barre -->
+    <header id="nav-bar">    
+      <a href="index.html">                                     
+        <img src="images/sherlock.png" alt="sherlock Image" />
+      </a>
+      <nav>
+        <ul>
+          <!-- Liens de navigations -->
+          <li><a href="#introduction">Introduction</a></li>|
+          <li><a href="biographie.html">Biographie</a></li>|
+          <li><a href="oeuvres.html">Ses Œuvres</a></li>|
+          <li><a href="anecdote.html">Anecdote</a></li>|
+          <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Titre principale -->
+    <h1>Sur les Traces d'Arthur Conan Doyle</h1> 
+    <h3>Une plongée captivante dans le mystère et l'énigme</h3>
+    <button id="voir-plus"><a href="#introduction">Voir Plus</a></button>
+
+    <!-- Sections pour des contenus diffrents -->
+
+    <!------------------------------------------------------- INTRODUCTION ------------------------------------------------------------------>
+    
+    <!---------- Le id pour pouvoir aller a la page introduction a travers le lien dans la bar de navigation ---------->
+    <section id="introduction" class="section-intro">
+      <!--Le Titre-->
+      <h2>INTRODUCTION</h2>
+      <!-- Texte pour l'introduction -->
+      <p>
+        Arthur Conan Doyle, est l'un des écrivains les plus célèbres de l'ère
+        victorienne. Connu principalement pour avoir créé le légendaire
+        détective Sherlock Holmes<br>
+        Conan Doyle a laissé une empreinte indélébile sur la littérature<br>
+        mondiale.<br><b>Cependant, sa vie fut bien plus riche que la seule création de ce personnage emblématique.</b>
+      </p>
+    </section>
+
+    <!-- Photo de Conan Doyle au vélo-->
+    <div class="div-bio">
+      <img src="images/biographie_image_index.png" />
+    </div>
+
+    <!------------------------------------------------------- BIOGRAPHIE ------------------------------------------------------------------>
+    <section id="Biographie" class="section-bio">
+      <!--Le Titre-->
+      <h2>BIOGRAPHIE</h2>
+      <!-- Texte  -->
+      <p>
+        Découvrez Plus sur La <br>
+        vie de Conan Doyle.
+      </p>
+      <!-- Button pour exploiter la page biographie -->
+      <button><a href="biographie.html">Explorer</a></button>
+    </section>
+    
+    <!-- Photo d'un livre sherlock holmes-->
+    <div class="div-oeuvre">
+      <img src="images/oeuvres_image_index.png" alt="Oeuvres Image" />
+    </div>
+
+    <!------------------------------------------------------- SES OEUVRES ------------------------------------------------------------------>
+    <section id="Oeuvres" class="section-oeuvre">
+      <!--Le Titre-->
+      <h2>SES OEUVRES</h2>
+      <!-- Texte  -->
+      <p>
+        Découvrez Ses écritures<br>
+        les plus connues.
+      </p>
+      <!-- Button pour exploiter la page oeuvres -->
+      <button><a href="oeuvres.html">Explorer</a></button>
+    </section>
+
+    <!-- Photo d'une loop-->
+    <div class="div-anec">
+      <img src="images/anecdote_image_index.png" alt="Anecdote Image" />
+    </div>
+
+    <!------------------------------------------------------- ANECDOTE ------------------------------------------------------------------>
+    <section id="Anecdote" class="section-anec">
+      <!--Le Titre-->
+      <h2>ANECDOTE</h2>
+      <!-- Texte  -->
+      <p>
+        Découvrez Plus sur La <br>
+        vie de Conan Doyle.
+      </p>
+      <!-- Button pour exploiter la page anecdote -->
+      <button><a href="anecdote.html">Explorer</a></button>
+    </section>
+
+    <!-- Photo de 2 hommes (Sherlock holmes et Watson de la serie Sherlock)-->
+    <div class="div-quiz">
+      <img src="images/quiz_image_index.png" alt="Quiz Image" />
+    </div>
+    <!------------------------------------------------------- QUIZ ------------------------------------------------------------------>
+    <section id="Quiz" class="section-quiz">
+      <!--Le Titre-->
+      <h2>QUIZ</h2>
+      <!-- Texte  -->
+      <p>
+        Passez le<br>
+        quiz ultime.
+      </p>
+      <!-- Button pour exploiter la page quiz -->
+      <button><a href="quiz.html">Explorer</a></button>
+    </section>
+    
+    <footer id="footer-index"></footer>
+  </body>
+</html>
